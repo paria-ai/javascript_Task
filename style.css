@@ -1,0 +1,335 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #071739;
+}
+/*calculate*/
+.Calculate{
+    width: 100%;
+    margin-top: 80px;
+}
+h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    margin-top: 0;
+    color: #071739;
+
+}
+.span{
+    color:#CDD5DB;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    margin-top: 5px;
+}
+.wrapper{
+    width: 30%;
+    padding: 35px 22px;
+    margin: auto;
+    background-color: #4B6382;
+    border-radius: 5px;
+}
+.text{
+    color: #E3C39D;
+    font-size:larger;
+    
+}
+
+.input{
+    outline: none;
+    border: none;
+    padding: 7px;
+    background-color: #CDD5DB;
+    color: #071739;
+    margin: 10px 0px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#btn{
+    color: #071739;
+    background-color: #A68868;
+    padding: 15px;
+    border: 2px solid #E3C39D;
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px;
+}
+#btn:hover{
+    background-color: #071739;
+    color: #A68868;
+    border: 2px solid #A4B5C4;
+}
+#output{
+    font-size: larger;
+    color: #071739;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    margin-top: 6%;
+}
+.input:focus{
+    border: 2px solid #071739
+}
+@media(max-width:700px){
+    .input{
+    width: 85%;
+    }
+.wrapper{
+    width: 60%;
+}}
+
+/*Music Player*/
+
+.player{
+    width: 100%;
+    margin-top:15% ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.box{
+    border: 2px solid #A68868;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: red(30px);
+    background-color:#A4B5C4 ;
+}
+.details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.track-art{
+margin: 25px;
+padding: 130px 130px;
+border: 2px solid #CDD5DB;
+background-size: cover;
+background-position: center;
+border-radius: 50%;
+background-image: url(./img/shapeofmyheart1.jpg);
+}
+.now-playing{
+    font-size: large;
+    font-weight: bold;
+    color: #071739;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.track-name{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #071739;
+    font-weight: bold;
+}
+.track-artist{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #071739;
+    font-weight: bold;
+    margin: 10px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.random-track,
+.prev-track,
+.playpause-track,
+.next-track,
+.repeat-track{
+    color: #A68868;
+    background-color: #A4B5C4;
+    border: none;
+    padding:0px 20px ;
+}
+.slider_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.seek_slider,
+.volume_slider{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background-color: #4B6382;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #071739;
+    border: 2px solid #E3C39D;
+    cursor: grab;
+    border-radius: 100%;
+}
+.seek_slider:hover,
+.volume_slider:hover{
+    opacity: 1;
+}
+.seek_slider{
+    width: 60%;
+}
+.volume_slider{
+    width: 30%;
+}
+.current-time,
+.total-duration{
+    padding: 10px;
+    color: #071739;
+    font-weight: bold;
+}
+i.fa-volume-down,
+i.fa-volume-up{
+    padding: 10px;
+}
+.rotate{
+    animation: rotation 8s infinite linear;
+}
+
+
+/*Count Down Timer*/
+.count_down_timer{
+    background-color: #4B6382;
+    padding: 30px;
+    border-radius: 30px;
+    width: 55%;
+    margin: auto;
+    margin-top: 15%;
+    
+}
+.coming{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+}
+.timer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.sub_timer{
+    width: 150px ;
+    background-color: #E3C39D;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 3px 3px #071739;
+}
+.digit{
+    color: #071739;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+    padding: 1rem 0;
+}
+.digit_name{
+    color: #4B6382;
+    background-color: #E3C39D;
+    text-align: center;
+    padding: 0.2rem 0;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+@media(max-width:700px){
+    .timer{
+   display: block;
+   margin: 0px 50px
+    }
+.sub_timer{
+    margin-top: 15px;
+}}
+
+
+/*Form validation*/
+#form{
+    width: 30%;
+    margin:15% auto 5% auto;
+    padding: 30px;
+    background-color: #A4B5C4;
+    border-radius: 10px;
+    font-size: larger;
+}
+#form p{
+    color: #4B6382;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+#form button{
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    color: #CDD5DB;
+    background-color: #071739;
+    border: #E3C39D;
+    border-radius: 5px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 4px;
+}
+.input-control{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.input-control label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+}
+.input-control input{
+    border: 2px solid #E3C39D;
+    border-radius: 5px;
+    display: block;
+    font-size: large;
+    padding: 5px;
+    width: 100%;
+    background-color: #071739;
+    color: #E3C39D;
+}
+.input-control input:focus{
+    outline: none;
+    border:none
+}
+.input-control.success input{
+    border-color: #071739;
+}
+.input-control.error input{
+    border-color: rgb(238, 109, 62);
+}
+.input-control .error{
+    color:rgb(238, 109, 62) ;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#form button:hover{
+    background-color: #4B6382;
+    color: #071739;
+    cursor: pointer;
+}
+@media(max-width:700px){
+   #form{
+   width: 80%;
+    }
+}

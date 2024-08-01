@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript_paria.Abedi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <!--calculate-->
+        <div class="Calculate">
+            <div class="wrapper">
+                <h3>BMI Calculate</h3>
+        <p class="text">Height in (cm):
+            <input class="input" type="text" id="height"><br><span class="span" id="height_error"></span>
+        </p>
+        <p class="text">weight in (kg):
+            <input  class="input" type="text" id="weight"><br><span class="span" id="weight_error"></span>
+        </p>
+        <button id="btn">Calculate</button>
+        <p id="output"></p>
+    </div>
+</div>
+
+<!--Music Player-->
+<div class="player">
+    <div class="box">
+        <div class="details">
+            <div class="now-playing">Music Player</div>
+            <div class="track-art"></div>
+            <div class="track-name">Shape of my heart</div>
+            <div class="track-artist">Sting</div>
+        </div>
+        <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="10" value="0"
+            class="seek_slider" />
+            <div class="total-duration">00:00</div>
+
+        </div>
+        <div class="slider_container">
+            <i class="fas fa-volume-down"></i>
+            <input type="range" max="100" min="0" value="99"
+            class="volume_slider"/>
+            <i class="fas fa-volume-up"></i>
+
+        </div>
+        <div class="buttons">
+            <button class="random-track" >
+                <i class="fas fa-random fa-2x"></i>
+            </button>
+            <button class="prev-track" >
+                <i class="fas fa-step-backward fa-2x"></i>
+            </button>
+            <button class="playpause-track" >
+                <i class="fas fa-play-circle fa-4x"></i>
+            </button>
+            <button class="next-track" >
+                <i class="fas fa-step-forward fa-2x"></i>
+            </button>
+            <button class="repeat-track">
+                <i class="fas fa-repeat fa-2x" ></i>
+            </button>
+        </div>
+    </div>
+    
+</div>
+<!--Count Down Timer-->
+
+    <div class="count_down_timer">
+        <p class="coming">Count Down Timer</p>
+        <div class="timer">
+            <div class="sub_timer">
+                <p id="day" class="digit">00</p>
+                <p class="digit_name">Days</p>
+            </div>
+            <div class="sub_timer">
+                <p id="hour" class="digit">00</p>
+                <p class="digit_name">Hours</p>
+            </div>
+            <div class="sub_timer">
+                <p id="min" class="digit">00</p>
+                <p class="digit_name">Minutes</p>
+            </div>
+            <div class="sub_timer">
+                <p id="sec" class="digit">00</p>
+                <p class="digit_name">Seconds</p>
+            </div>
+
+        </div>
+
+    </div>
+<!--Form validation-->
+<div class="form_validation">
+    <form id="form" action="/">
+        <p> Form Validation</p>
+        <div class="input-control">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" >
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="password">Password again</label>
+            <input id="password2" name="password2" type="password">
+            <div class="error"></div>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+
+</div>
+</div>
+</body>
+</html>
